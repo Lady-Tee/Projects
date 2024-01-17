@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoorDash</title>
+    
+    <link rel="stylesheet" href="./doordash2.css">
+</head>
+<body>
+    <!-- the first page -->
+    <section class="header_hero">
+        <header>
+             <!-- the logo is an svg that i copied from the site when i inspected element -->
+<!--      
+             <div class="doordash_logo"> 
+            <svg width="42" height="24" viewBox="0 0 99.5 56.5" fill="#ffffff"><path d="M95.64,13.38A25.24,25.24,0,0,0,73.27,0H2.43A2.44,2.44,0,0,0,.72,4.16L16.15,19.68a7.26,7.26,0,0,0,5.15,2.14H71.24a6.44,6.44,0,1,1,.13,12.88H36.94a2.44,2.44,0,0,0-1.72,4.16L50.66,54.39a7.25,7.25,0,0,0,5.15,2.14H71.38c20.26,0,35.58-21.66,24.26-43.16"></path></svg>
+            
+            <svg width="155" height="18" viewBox="0 0 361.1 42" fill="#ffffff"><path d="M8.62,8.66V33.38h6.32A12.21,12.21,0,0,0,27,21,12,12,0,0,0,14.94,8.66ZM14.94.91C26.72.91,35.63,9.81,35.63,21S26.72,41.14,14.94,41.14H1a1,1,0,0,1-1-1V1.95a1,1,0,0,1,1-1Z"></path><path d="M66,34.24A13.22,13.22,0,1,0,52.82,21,13.24,13.24,0,0,0,66,34.24M66,0C78.4,0,87.88,9.53,87.88,21S78.4,42,66,42,44.2,32.52,44.2,21,53.68,0,66,0"></path><path d="M118,34.24A13.22,13.22,0,1,0,104.75,21,13.24,13.24,0,0,0,118,34.24M118,0c12.36,0,21.84,9.48,21.84,21S130.32,42,118,42,96.12,32.52,96.12,21,105.6,0,118,0"></path><path d="M168.75,8.66h-8.91V19.3h8.91a5.22,5.22,0,0,0,5.46-5.17,5.28,5.28,0,0,0-5.46-5.46M151.22,1.95a1,1,0,0,1,1-1H169c8,0,13.79,5.86,13.79,13.22a13,13,0,0,1-7.18,11.78l7.74,13.68a1,1,0,0,1-.91,1.56h-6.79a1,1,0,0,1-.91-.54l-7.46-13.54h-7.47v13a1,1,0,0,1-1,1h-6.54a1,1,0,0,1-1-1Z"></path><path d="M205.26,8.85V33.57h6.32a12.21,12.21,0,0,0,12.07-12.36A12,12,0,0,0,211.58,8.85Zm6.32-7.76c11.78,0,20.69,8.91,20.69,20.12s-8.91,20.12-20.69,20.12h-13.9a1,1,0,0,1-1-1V2.14a1,1,0,0,1,1-1Z"></path><path d="M258.56,10.92l-4.89,13.22h9.77Zm-7.76,20.69-3.2,8.8a1,1,0,0,1-1,.69h-6.94a1,1,0,0,1-1-1.42l15-38.15a1,1,0,0,1,1-.66h7.77a1,1,0,0,1,1,.66l15,38.15a1,1,0,0,1-1,1.42h-6.94a1,1,0,0,1-1-.69l-3.2-8.8Z"></path><path d="M286.48,11.78C286.48,5.46,291.94,0,300.56,0a17.84,17.84,0,0,1,12.51,4.71,1,1,0,0,1,0,1.47L309.22,10a1,1,0,0,1-1.42,0,10.12,10.12,0,0,0-6.67-2.63c-3.45,0-6,2-6,4.31,0,7.47,20.38,3.16,20.38,17.53C315.5,36.49,310,42,300.27,42a20.41,20.41,0,0,1-14.54-5.84,1,1,0,0,1,0-1.47l3.72-3.72a1,1,0,0,1,1.45,0,12.85,12.85,0,0,0,8.79,3.58c4.31,0,7.15-2.3,7.15-5.18,0-7.47-20.37-3.16-20.37-17.53"></path><path d="M352.47,1.9V17H335.22V1.9a1,1,0,0,0-1-1h-6.54a1,1,0,0,0-1,1V40.05a1,1,0,0,0,1,1h6.54a1,1,0,0,0,1-1V24.71h17.24V40.05a1,1,0,0,0,1,1H360a1,1,0,0,0,1-1V1.9a1,1,0,0,0-1-1h-6.54A1,1,0,0,0,352.47,1.9Z"></path></svg>
+             </div> -->
+
+            <div class="header_buttons">
+                <a href="">Sign In</a>
+                <a href="" id="signUp"> <span >Sign Up</span></a>
+            </div>
+        </header>
+
+        <div class="hero">
+            <div class="heroText">
+                <h1>
+                    Discover restaurants and more near you.
+                </h1>
+            </div>
+
+            <div class="heroInput">
+               <div class="topInput">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="text" name="address" id="" placeholder="Enter delivery address">
+               </div> 
+
+               <div class="bottomInput">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="button" value="Sign In for saved address">
+               </div>
+            </div>
+        </div>
+       
+    </section>
+
+    <!-- the second page -->
+    <section class="page2">
+        <div class="page2_container">
+            <img src="scooter doordash.svg" alt="">
+
+            <div class="page2_text">
+                <h2>Become a Dasher</h2>
+                <p>As a delivery driver, you'll make reliable money—working anytime, anywhere.</p>
+                <a href="">Start earning  &#2192</a>
+            </div>
+        </div>
+
+        <div class="page2_container" id="pageContainer2">
+            <img src="Storefront doordash.svg" alt="">
+
+            <div class="page2_text">
+                <h2>Become a Partner</h2>
+                <p>Grow your business and reach new customers by partnering with us.</p>
+                <a href="">Sign up your store
+                    &#2192</a>
+            </div>
+        </div>
+
+        <div class="page2_container" id="pageContainer3">
+            <img src="iphone doordash.svg" alt="">
+
+            <div class="page2_text">
+                <h2>Get the best DoorDash experience</h2>
+                <p>Experience the best your neighborhood has to offer, all in one app..</p>
+                <a href="">Get the app  &#2192</a>
+            </div>
+        </div>
+
+    </section>
+    
+    <!-- the third page -->
+    <section class="page3">
+        <div class="page3_text_container">
+            <div class="page3_text">
+                <h1>Everything you crave, delivered.</h1>
+    
+                <h2>Your favorite local restaurants</h2>
+    
+                <p>Get a slice of pizza or the whole pie delivered, or pick up house lo mein from the Chinese takeout spot you've been meaning to try.</p>
+                
+                <div id="page3button"><a href="">Find restaurants</a></div>
+                
+            </div>
+        </div>
+
+        <div class="page3_image_container">
+            <img src="./pizza vgirl doordash.avif" alt="">
+        </div>
+    </section>
+
+    <!-- the fourth page  -->
+    <section class="page4">
+        <div class="page4_image_container">
+            <img src="./food doordash.avif" alt="">
+        </div>
+
+        <div class="page4_text_container">
+            <div class="page4_text">
+                <h1>DashPass is delivery for less</h1>
+
+                <p>Members get a $0 delivery fee on DashPass orders, 5% back on pickup orders, and so much more. Plus, it's free for 30 days.</p>
+                
+                <div id="page4button"><a href="">Get DashPass</a></div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- the fifth page  -->
+    <section class="page_5">
+        <div class="page5_background">
+            <img src="fruits doordash.jpg" alt="">
+        </div>
+
+        <div class="page5_hero">
+            <div class="page5_text">
+                <h1>Get grocery and convenience store essentials</h1>
+    
+                <h2>Grocery delivery, exactly how you want it.</h2>
+    
+                <p>Shop from home and fill your cart with fresh produce, frozen entrees, deli delights, and more.</p>
+                
+                <div id="page5button"><a href="">Shop Groceries</a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- the sixth page  -->
+    <section class="page6">
+        <div class="page6_text_container">
+            <div class="page6_text">
+                <h1>Convenience stores at your doorstep</h1>
+    
+                <p>Stock up on snacks, household essentials, candy, or vitamins — all delivered in under an hour.</p>
+                
+                <div id="page6button"><a href="">Shop now</a></div>
+                
+            </div>
+        </div>
+
+        <div class="page6_image_container">
+            <img src="./goods doordash.avif" alt="">
+        </div>
+    </section>
+
+    <!-- the seventh page  -->
+    <section class="page7">
+        <div class="page7_header">
+          <h1>Helping you with to-dos and gifting</h1>
+        </div>
+        <div class="page7_body">
+            <div class="page7_contentbox">
+                <div class="page7_image_container">
+                    <img src="package doordash.webp">
+                </div>
+                <div class="page7_text_container">
+                    <h1>Return packages from home</h1>
+                    <p>Request a package pickup with just a few taps and get your returns dropped off at carriers like UPS, FedEx, and USPS.</p>
+                    <div id="page7button"><a href="">Try Package Pickup</a></div>
+                </div>
+            </div>
+
+            <div class="page7_contentbox">
+                <div class="page7_image_container">
+                    <img src="backpack doordash.webp">
+                </div>
+                <div class="page7_text_container">
+                    <h1>Back to school shopping</h1>
+                    <p>From school snacks to notebooks, find everything on your back to school list.</p>
+                    <div id="page7button"><a href="">Shop Now</a></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="page7_body">
+            <div class="page7_contentbox">
+                <div class="page7_image_container">
+                    <img src="alcohol doordash.avif">
+                </div>
+                <div class="page7_text_container">
+                    <h1>Restock the minibar</h1>
+                    <p>Hosting a get-together or need or need a special cocktail ingredient? Get liquor, beer, mixers, champagne, and wine delivered fast.*</p>
+                    <div id="page7button"><a href="">Shop Alcohol</a></div>
+                    <p>*Must be 21+. Enjoy responsibly.</p>
+                </div>
+            </div>
+
+            <div class="page7_contentbox">
+                <div class="page7_image_container">
+                    <img src="pets doordash.avif">
+                </div>
+                <div class="page7_text_container">
+                    <h1>What your pets need, and want</h1>
+                    <p>Finally, something cat people and dog people agree on — pet supplies delivery. Shop pet food, chew toys, and even costumes.</p>
+                    <div id="page7button"><a href="">Get Pet Supplies</a></div>
+                    
+                </div>   
+            </div>
+            </div>
+        </div>
+</section>
+<!-- the 8th page -->
+<section class="page8">
+    <div class="page8_header">
+      <h1>Unlocking opportunity for Dashers and businesses</h1>
+    </div>
+    <div class="page8_body" id="dasher2">
+        <div class="page8_contentbox">
+            <div class="page8_text_container">
+                <h1>Sign up to dash and get paid</h1>
+                <p>Deliver with the #1 Food and Drink App in the U.S., set your own schedule, and start earning cash anytime, anywhere.</p>
+                <div id="page8button"><a href="">Become A Dasher</a></div>
+            </div>
+        </div>
+
+        <div class="page8_contentbox">
+            <div class="page8_image_container">
+                <img src="dasher doordash.avif">
+            </div>
+        
+        </div>
+
+    </div>
+    <div class="page8_body" id="dasher">
+        <div class="page8_contentbox">
+            <div class="page8_image_container">
+                <img src="delivery doordash.avif">
+            </div>
+        </div>
+
+        <div class="page8_contentbox">
+            <div class="page8_text_container">
+                <h1>Grow your business with DoorDash</h1>
+                <p>Businesses large and small partner with DoorDash to reach new customers, increase order volume, and drive more sales.</p>
+                <div id="page8button"><a href="">Become A Partner</a></div>
+                
+            </div>   
+        </div>
+    </div>
+</section>
+<!-- footer page -->
+<section class="footer_container">
+    <div class="footer1">
+        <ul>
+            <li>Top Cities</li><br>
+            <li><a href="#">New York City</a></li>
+            <li><a href="#">Los Angeles</a></li>
+            <li><a href="#">Toronto</a></li>
+            <li><a href="#">Chicago</a></li>
+            <li><a href="#">Houston</a></li>
+            <li><a href="#">Brooklyn</a></li>
+            <li><a href="#">San Diego</a></li>
+            <li><a href="#">Las Vegas</a></li>
+        </ul>
+    </div>
+    <div class="footer2">
+        <ul>
+            <li><a href="#">San Francisco</a></li><br>
+            <li><a href="#">Seattle</a></li><br>
+            <li><a href="#">Atlanta</a></li><br>
+            <li><a href="#">Queens</a></li><br>
+            <li><a href="#">Vancouver, BC</a></li><br>
+            <li><a href="#">Miami</a></li><br>
+            <li><a href="#">San Antonio</a></li><br>
+            <li><a href="#">Phoenix</a></li><br>
+        </ul>
+    </div>
+    <div class="footer3">
+        <ul>
+            <li><a href="#">Denver</a></li><br>
+            <li><a href="#">Austin</a></li><br>
+            <li><a href="#">Washington, DC</a></li><br>
+            <li><a href="#">Dallas</a></li><br>
+            <li><a href="#">Melbourne</a></li><br>
+            <li><a href="#">Sydney</a></li><br>
+            <li><a href="#">Montreal</a></li><br>
+            <li><a href="#">All Cities</a></li><br>
+        </ul>
+    </div>
+    <div class="footer4">
+        <ul>
+            <li>Top Cuisines Near You</li><br>
+            <li><a href="#">Pizza Near Me</a></li><br>
+            <li><a href="#">Chinese Food Near Me</a></li><br>
+            <li><a href="#">Sushi Near Me</a></li><br>
+            <li><a href="#">Cafe Near Me</a></li><br>
+            <li><a href="#">Mexican Food Near Me</a></li><br>
+            <li><a href="#">Thai Food Near Me</a></li><br>
+            <li><a href="#">Lunch Near Me</a></li><br>
+            <li><a href="#">Seafood Near Me</a></li><br>
+        </ul>
+    </div>
+    <div class="footer5">
+        <ul>
+            <li><a href="#">Indian Food Near Me </a></li><br>
+            <li><a href="#">Dessert Near Me</a></li><br>
+            <li><a href="#">Burgers Near Me</a></li><br>
+            <li><a href="#">Asian Food Near Me</a></li><br>
+            <li><a href="#">Italian Food Near Me</a></li><br>
+            <li><a href="#">Vegan Food Near Me</a></li><br>
+            <li><a href="#">Sandwiches Near Me</a></li><br>
+            <li><a href="#">Resturants Near Me</a></li><br>
+        </ul>
+    </div>
+    <div class="footer6">
+        <ul>
+            <li>Popular Categories</li>
+            <li><a href="#">Alcohol Delivery </a></li>
+            <li><a href="#">Back To School</a></li>
+            <li><a href="#">Beauty Stores</a></li>
+            <li><a href="#">Beauty Supply</a></li>
+        </ul>
+    </div>
+    <div class="footer7">
+        <ul>
+            <li><a href="#">Catering Near Me </a></li><br>
+            <li><a href="#">Convenience Stores</a></li><br>
+            <li><a href="#">Dashmart Near Me</a></li><br>
+            <li><a href="#">Flower Delivery</a></li><br>
+            
+        </ul>
+    </div><div class="footer8">
+        <ul>
+            <li><a href="#">Grocery Delivery </a></li><br>
+            <li><a href="#">Hallowen</a></li>
+            <li><a href="#">Medicine Delivery</a></li>
+            <li><a href="#">Pet Store Near Me</a></li>
+           
+        </ul>
+    </div><div class="footer9">
+        <ul>
+            <li><a href="#">Retail Stores Near Me </a></li><br>
+        </ul>
+    </div>
+    <div class="footer10">
+        <ul>
+            <li>Get To Know Us</li><br>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Company Blog</a></li>
+            <li><a href="#">Engineering Blog</a></li>
+            <li><a href="#">Merchant Blog</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">Package Pickup</a></li>
+            <li><a href="#">Promotions</a></li>
+            <li><a href="#">Dasher Central</a></li>
+            <li><a href="#">Linkedin</a></li>
+            <li><a href="#">Glassdoor</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Newsroom</a></li>
+        </ul>
+    </div>
+    <div class="footer11">
+        <ul>
+            <li><a href="#">Let Us Help You</a></li><br>
+            <li><a href="#">Account Details</a></li>
+            <li><a href="#">Order History</a></li>
+            <li><a href="#">Help</a></li> 
+        </ul>
+    </div>
+    <div class="footer12">
+        <ul>
+            <li><a href="#">Doing Business</a></li><br><br>
+            <li><a href="#">Become a Dasher</a></li><br>
+            <li><a href="#">List Your Business</a></li><br>
+            <li><a href="#">Get Dashers For Deliveries</a></li><br>
+            <li><a href="#">Get Doordash For Work</a></li><br>
+            
+        </ul>
+    </div>
+<div class="footer13_container">
+        <div class="footer13"><a href="#"><svg width="42" height="24" viewBox="0 0 99.5 56.5" fill="#ffffff"><path d="M95.64,13.38A25.24,25.24,0,0,0,73.27,0H2.43A2.44,2.44,0,0,0,.72,4.16L16.15,19.68a7.26,7.26,0,0,0,5.15,2.14H71.24a6.44,6.44,0,1,1,.13,12.88H36.94a2.44,2.44,0,0,0-1.72,4.16L50.66,54.39a7.25,7.25,0,0,0,5.15,2.14H71.38c20.26,0,35.58-21.66,24.26-43.16"></path></svg></a></div>
+        <a href="#">Terms of service</a> 
+        <a href="#">Privacy</a>
+        <a href="#">Delivery Location</a>
+        <a href="#">California Privacy</a>
+        <a href="#">Do not Sell or Share My Personal Information</a>
+          <select name="lang" id="lang"> 
+            <option value="eng">English (US)</option>
+            <option value="esp">Espanol (US)</option>
+            <option value="engl">English (CA)</option>
+            <option value="fra">Francais (CA)</option>
+            <option value="fra">English (AU)</option>
+            <option value="fra">English (NZ)</option>
+         </select>
+        <div class="icon">
+            <a href="#"><i class='bx bxl-facebook' style="color: #ffffff"></i></a>
+            <a href="#"><i class='bx bxl-twitter' style="color: #ffffff"></i></a>
+            <a href="#"><i class='bx bxl-instagram' style="color: #ffffff"></i></a>
+        </div>
+     </div>
+</section>
+</body>
+</html>

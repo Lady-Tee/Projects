@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  background-color: white;
+  color: brown;
+}
+/* first page */
+.container {
+    /* border: 2px solid red; */
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.navbar {
+    width: 50%;
+}
+ul {
+    /* border: 2px solid green; */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background-color: #333; */
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    width: 100%;
+    display: block;
+    color: rgb(87, 86, 86);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: rgb(171, 83, 83);
+  }
+  .headerbuttons {
+    /* border: 2px solid orange; */
+    padding: 10px;
+    background-color: rgb(171, 83, 83);
+    color: black;
+    text-decoration: none;
+    border-radius: 25px;
+  }
+  a:link {
+    text-decoration: none;
+  }
+  a:hover {
+    color: lightslategrey;
+  }
+  a:visited {
+    color: black;
+  }
+  /* second page */
+  .container2 {
+    /* border: 2px solid black; */
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  img {
+    height: 300px;
+    width: 300px;
+    padding: 20px; 
+  }
+  .container3 {
+    /* border: 2px solid yellow; */
+    margin-top: 20px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+  .buttons2 {
+    /* border: 2px solid green; */
+    margin-top: 20px;
+  }
+ .menu {
+  /* border: 2px solid green; */
+    border-radius: 25px;
+    padding: 15px;
+    font-size:medium;
+    background-color: rgb(171, 83, 83);
+    cursor: pointer;
+ }
+ .dir {
+  /* border: 2px solid red; */
+  border-radius: 25px;
+  padding: 15px;
+  font-size:medium;
+  background-color: rgb(171, 83, 83);
+  cursor: pointer;
+ }
+ .icons {
+    /* border: 2px solid brown; */
+    margin-top: 20px;
+    /* background-color: black; */
+    color: black;
+ }
+ .container4 {
+  /* border: 2px solid red; */
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+ }
+ img {
+  width: 500px;
+  height: 400px;
+ }
+ h1{
+  text-align: center;
+ }
+ p {
+  text-align: center;
+ }
+ /* page 5 */
+ .buttons3 {
+  /* border: 2px solid red; */
+  display:flex;
+  text-align: center;
+  margin-top: 20px;
+  justify-content: center;
+  /* border: 2px solid purple; */
+ }
+ /* page 6 */
+ .container5 {
+  /* border: 2px solid green; */
+  margin-top: 40px;
+ }
+ /* page 7 */
+ .container6 {
+  /* border: 2px solid red; */
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+ }
+ .aboutus {
+  /* border: 2px solid brown; */
+  margin-top: 20px;
+  text-align: center;
+  font-size: larger;
+  word-spacing: 10px;
+ }
+ /* page 7 */
+ .container7 {
+  /* border: 2px solid pink; */
+  margin-top: 20px;
+ }
+ /* page 8 */
+ .container8 {
+  /* border: 2px solid pink; */
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+ }
+ .footer1 {
+  word-spacing: 10px;
+ }
